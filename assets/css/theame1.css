@@ -1,0 +1,367 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Oi&family=Rubik+Puddles&display=swap');
+/* font-family: "Rubik Puddles", serif;
+font-family: "Oi", serif;
+font-family: "Chango", serif; */
+a:hover , a:active , a:active{
+  text-decoration: none
+}
+
+body{
+  margin: 0;
+}
+
+/* the alll content container how the whole page is divided by css */
+.allContent_container {  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 9.1% repeat(2, 50%) 10.5%;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav_container"
+    "log_container"
+    "calc_container"
+    "footer";
+}
+
+/* the navigation bar container i am making it like dark tone from the color */
+.nav_container { 
+  grid-area: nav_container;
+  background-color: #281521; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 50px;
+
+}
+/* the link that drives u to the lig in part i wanted to decorate it and to change the font */
+.nav_container>.logIn , .calculator_nav{
+  text-decoration: none;
+  color:#B76645;
+  font-size: xx-large;
+  font-family:monospace;
+  font-weight: bolder;
+  
+}
+/* the container that hold the input that weput in the page of log in */
+.log_container { 
+  grid-area: log_container;
+  background-color: #416DA4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 50px;
+  border-color: #B76645;
+  border-style: dotted;
+  border-width: 20px;
+  margin-bottom: 30px;
+}
+/* the word log in shall be big and bold */
+.logPanner{
+  color: #B76645;
+  font-family: "Oi", serif;
+}
+/* the word beside the input container for name */
+.nameT{
+  color: #281521;
+  font-family:fantasy;
+  font-size: 35px;
+  font-weight: 100;
+}
+/* the input container for name  */
+.urName{
+  background-color: #281521;
+  color:#5DA3CC;
+  border-color:#281521;
+  height: 35px;
+  width: auto;
+  border-radius: 1px;
+  border-width: 1px;
+  margin-left: 8px;
+}
+
+/* the word beside the input container for age */
+.ageT{
+  color:#281521;
+  font-family:fantasy;
+  font-size: 35px;
+  font-weight: 100;
+}
+/* the input container for age  */
+.urAge{
+  background-color: #FFD1DC;
+  color:#5DA3CC;
+  border-color:#B76645;
+  height: 35px;
+  width: auto;
+  border-radius: 1px;
+  border-width: 1px;
+  margin-left: 8px;
+}
+/* the word beside the input container for theame */
+.theamT{
+  color: #281521;
+  font-family:fantasy;
+  font-size: 35px;
+  font-weight: 100;
+}
+/* the input container for theame  */
+.theame{
+  background-color: #FFD1DC;
+  color:#5DA3CC;
+  border-color:#B76645;
+  height: 35px;
+  width: auto;
+  border-radius: 1px;
+  border-width: 1px;
+  margin-left: 8px;
+}
+
+/* the button to supmit the log in */
+.submitLOGIN{
+  background-color: #B76645;
+  color:rgb(255, 255, 255);
+  border-color:#281521;
+  height: 35px;
+  width: 60px;
+  border-radius: 2px;
+  border-width: 1px;
+  margin-left: 8px;
+  transition: background-color 0.15s , color 0.15s;
+}
+
+.calc_container { 
+  background-color:#5DA3CC;
+  grid-area: calc_container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 13% 72.9% 8.4% 20%;
+  grid-auto-columns: 1fr;
+  gap: 2% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "equations_box"
+    "button_box"
+    "name"
+    "infoBar";
+
+}
+/* the container style that contain the other boxes  */
+.equations_box { 
+  grid-area: equations_box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #5DA3CC;
+  border-color:#281521;
+  height: auto;
+  width: auto;
+  border-radius: 60px;
+}  
+/* <!-- screen show the result true or false --> */
+/* <!-- screen shows the question --> */
+/* <!-- equation answer view when u clic the button --> */
+.view_box{
+  background-color: #5DA3CC;
+  color:#B76645;
+  height: 35px;
+  width: auto;
+  
+}
+.button_box { 
+  background-image: url(../imgs/spacebg.jpeg);
+  background-repeat: repeat;
+  grid-area: button_box;
+  background-color: #B76645;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 40%;
+  margin-top:10px; ;
+  display: grid;
+  grid-template-columns:  repeat(7,14.29); 
+  grid-template-rows:   repeat(5,14.58);
+  grid-auto-columns: 1fr;
+  gap: 1% 1%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . operatorEQ"
+    "operatorClear . num1 num2 num3 . operatorMORE"
+    "operatorDelete . num4 num5 num6 . operatorLESS"
+    "operatorSubmit . num7 num8 num9 . operatorBLUS"
+    ". . . . . . operatorNEGTIV"; */
+}
+  
+#operatorEQ { 
+  grid-area: operatorEQ;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+}
+  
+#operatorMORE { 
+  grid-area: operatorMORE;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+
+}
+  
+#operatorLESS { 
+  grid-area: operatorLESS;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+ }
+  
+#operatorBLUS { 
+  grid-area: operatorBLUS;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+
+}
+  
+#operatorNEGTIV { 
+  grid-area: operatorNEGTIV;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px; 
+}
+  
+#num1 { 
+  grid-area: num1;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px; 
+}
+  
+#num2 { 
+  grid-area: num2; 
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+}
+  
+#num3 { 
+  grid-area: num3;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+ }
+  
+#num4 { 
+  grid-area: num4;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px; 
+}
+  
+#num5 { 
+  grid-area: num5;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px; }
+  
+#num6 { 
+  grid-area: num6;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+ }
+  
+#num7 { 
+  grid-area: num7;
+  width: 50px; 
+  height: 50px;
+  font-size: 30px;
+
+}
+  
+#num8 { 
+  grid-area: num8;
+  width: 50px; 
+  height: 50px;
+  font-size: 10px;
+}
+  
+#num9 { 
+  grid-area: num9;
+  width: 50px; 
+  height: 50px;
+  font-size: 10px;
+}
+  
+#operatorClear { 
+  grid-area: operatorClear;
+  width: 50px; 
+  height: 50px;
+  font-size: 10px;
+}
+  
+#operatorSubmit { 
+  grid-area: operatorSubmit; 
+  width: 50px; 
+  height: 50px;
+  font-size: 10px;
+}
+  
+#operatorDelete { 
+  grid-area: operatorDelete;
+  width: 50px; 
+  height: 50px;
+  font-size: 10px; 
+}
+
+.numb_button{
+  background-color: #B76645;
+  color:#ffffff;
+  border-color:#281521;
+  height: 35px;
+  width: 40px;
+  border-radius: 100px;
+  border-width: 1px;
+  margin-left: 8px;
+  transition: background-color 0.15s , color 0.15s;
+}
+
+.name { 
+  color: #ffffff;
+  grid-area: name;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+.infoBar {
+  grid-area: infoBar; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  font-family:fantasy;
+  font-size: 30px;
+  color: #B76645;
+  background-color: #281521;
+}
+
+
+
+
+.footer { 
+  margin-top: 20px;
+  grid-area: footer;
+  background-color: black;
+  color: aliceblue;
+}

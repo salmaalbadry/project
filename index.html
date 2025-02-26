@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="../kidcalc/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidCalc</title>
+</head>
+<body>
+    <div class="allContent_container">
+        <!-- navbar -->
+         <nav class="nav_container">
+            <a href="https://www.instagram.com/" class="logIn">login</a>
+            <a href="https://www.instagram.com/" class="calculator_nav">calculator</a>
+         </nav>
+        <!-- log in section -->
+        <div class="log_container">
+            <div class="imgB"> 
+                <img src="../kidcalc/assets/imgs/barbiepfp.png" alt="pfp" height="200px" width="200px">
+            </div>
+           <!-- log in part and the cntainer of the log in word --> 
+            <div class="logPanner">
+                <h1>log in</h1>
+            </div>  
+            <!-- input name were the name will be entered its gonna be the first req -->
+            <div >
+               <label for="urName"  class="nameT" >Name</label>
+               <input type="text" class="urName" placeholder="Enter ur Name Here Love" >
+            </div>
+            <!-- input age were age will be entered sec req -->
+            <div >
+                <label for="urAge" class="ageT">Age</label>
+                <input type="number" class="urAge" placeholder="Enter ur Age Here Love" >
+            </div>
+            <!-- choose the theame between barbie and space and super hero -->
+            <div >
+                <label for="theame" class="theamT">preferred theme</label>
+                <select class="theame">
+                    <option>Ur Theame Is Ur Personality</option>
+                    <option>Barbie</option>
+                    <option>Cars</option>
+                    <option>Space</option>
+                </select>
+                <img src="" alt="">
+            </div>
+            <!-- submit to supmit the log in and save it -->
+            <div>
+                <button class="submitLOGIN">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+        <!-- from here is like a new  start but t the same page for the calculator sec  -->
+        <!-- calc section-->
+        <div class="calc_container">
+            <!-- start here with the equation box and the answer and if it is true or false -->
+           <div class="equations_box">
+                <!-- screen show the result true or false -->
+                <div class="view_box" id="showANSWER">
+                    <input type="text"  readonly>
+                 </div>
+                <!-- screen shows the question -->
+                <div class="view_box" id="showquestion">
+                    <input type="text"   placeholder="5+9" readonly>
+                </div>
+                 <!-- equation answer view when u clic the button -->
+                <div class="view_box" id="showTYPED">
+                    <input type="text"  readonly>
+                </div>
+            </div>
+            <!-- here is the buttons sec from number to operator buttons -->
+            <div class="button_box">
+                <!-- numbers only first -->
+                <div class="numb_button_box">
+                    <!-- first row of buttons -->
+                    <button class="numb_button" id="num1">
+                        1
+                    </button>
+                    <button class="numb_button" id="num2" >
+                        2
+                    </button>
+                    <button class="numb_button" id="num3">
+                        3
+                    </button>
+                
+                    <!-- sec row of buttons -->
+                    <button class="numb_button" id="num4" >
+                        4
+                    </button>
+                    <button class="numb_button" id="num5" >
+                        5
+                    </button>
+                    <button class="numb_button" id="num6">
+                        6
+                    </button>
+
+                    <!-- third row of buttons -->
+                    <button class="numb_button" id="num7" >
+                        7
+                    </button>
+                    <button class="numb_button" id="num8" >
+                        8
+                    </button>
+                    <button class="numb_button" id="num9" >
+                        9
+                    </button>
+                </div>
+            
+                <!-- Operator buttons only now -->
+                <div class="Operator buttons">
+                    <button class="numb_button" id="operatorEQ">
+                        =
+                    </button>
+                    <button class="numb_button" id="operatorMORE">
+                        >
+                    </button>
+                    <button class="numb_button" id="operatorLESS">
+                       < 
+                    </button>
+                    <button class="numb_button" id="operatorNEGTIV" >
+                        -
+                    </button>
+                    <button class="numb_button" id="operatorBLUS">
+                        +
+                    </button>
+
+                    <button class="numb_button" id="operatorClear">
+                        Clear
+                    </button>
+
+                    <button class="numb_button" id="operatorSubmit">
+                        Submit
+                    </button>
+
+                   <button class="numb_button" id="operatorDelete">
+                    Delete
+                    </button>
+                </div>
+            </div>
+            <div class="name">
+                <h3 >salma</h3>
+            </div>
+            <!-- info bar were the level of the kid at -->
+            <div class="infoBar">
+                <h4 class="level1">Baby</h4>
+                <h4 class="level2">Kid</h4>
+                <h4 class="level3">Slay</h4>
+                <h4 class="level4">Legend</h4>
+                <h4 class="level5">Queen</h4>
+                <h4 class="level6">Hero</h4>
+            </div>
+
+        </div>
+        
+        <footer>
+            <p>hahahahahahaha</p>
+        </footer> 
+    
+    </div>
+  
+</body>
+</html>
